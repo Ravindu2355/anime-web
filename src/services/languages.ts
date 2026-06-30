@@ -1,0 +1,367 @@
+export type LanguageCode = "en" | "ja" | "es" | "si" | "fr";
+
+export interface TranslationDictionary {
+  appName: string;
+  home: string;
+  movies: string;
+  tvShows: string;
+  watchlist: string;
+  downloads: string;
+  searchPlaceholder: string;
+  trending: string;
+  recommendedForYou: string;
+  popularOngoing: string;
+  genre: string;
+  status: string;
+  type: string;
+  playNow: string;
+  addedToWatchlist: string;
+  addToWatchlist: string;
+  episodes: string;
+  episode: string;
+  comments: string;
+  addComment: string;
+  quality: string;
+  download: string;
+  driveLink: string;
+  directDownload: string;
+  offlineMode: string;
+  offlineReady: string;
+  downloadForOffline: string;
+  downloading: string;
+  downloaded: string;
+  adminDashboard: string;
+  login: string;
+  logout: string;
+  signUp: string;
+  watchParty: string;
+  createParty: string;
+  joinParty: string;
+  partyRoom: string;
+  settings: string;
+  deviceSync: string;
+  syncComplete: string;
+  rating: string;
+  year: string;
+  statusOngoing: string;
+  statusCompleted: string;
+  details: string;
+  skipIntro: string;
+  nextEpisode: string;
+  multiDeviceSyncDesc: string;
+  shareTitle: string;
+  shareDesc: string;
+  copyLink: string;
+  linkCopied: string;
+  addShow: string;
+  editShow: string;
+  deleteShow: string;
+  totalViews: string;
+  activeUsers: string;
+}
+
+export const languages: { code: LanguageCode; name: string; flag: string }[] = [
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "ja", name: "日本語", flag: "🇯🇵" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "si", name: "සිංහල", flag: "🇱🇰" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+];
+
+export const translations: Record<LanguageCode, TranslationDictionary> = {
+  en: {
+    appName: "AniStream",
+    home: "Home",
+    movies: "Movies",
+    tvShows: "TV Shows",
+    watchlist: "My Watchlist",
+    downloads: "Downloads",
+    searchPlaceholder: "Search anime by title, genre, or tag...",
+    trending: "Trending Now",
+    recommendedForYou: "Recommended For You",
+    popularOngoing: "Popular Ongoing Series",
+    genre: "Genre",
+    status: "Status",
+    type: "Type",
+    playNow: "Play Now",
+    addedToWatchlist: "In Watchlist",
+    addToWatchlist: "Add to Watchlist",
+    episodes: "Episodes",
+    episode: "Episode",
+    comments: "Comments",
+    addComment: "Write a comment...",
+    quality: "Quality",
+    download: "Download",
+    driveLink: "Google Drive Link",
+    directDownload: "Direct Download",
+    offlineMode: "Offline Mode",
+    offlineReady: "Ready for Offline Viewing",
+    downloadForOffline: "Download Episode",
+    downloading: "Downloading...",
+    downloaded: "Downloaded",
+    adminDashboard: "Admin Panel",
+    login: "Log In",
+    logout: "Log Out",
+    signUp: "Sign Up",
+    watchParty: "Watch Party",
+    createParty: "Create Watch Party",
+    joinParty: "Join Room",
+    partyRoom: "Party Room",
+    settings: "Settings",
+    deviceSync: "Sync Progress",
+    syncComplete: "Sync Complete",
+    rating: "Rating",
+    year: "Year",
+    statusOngoing: "Ongoing",
+    statusCompleted: "Completed",
+    details: "Details",
+    skipIntro: "Skip Intro",
+    nextEpisode: "Next Episode",
+    multiDeviceSyncDesc: "Your watch progress and downloads are synced across devices via Firebase.",
+    shareTitle: "Share Anime",
+    shareDesc: "Share this stream with your friends and watch together!",
+    copyLink: "Copy Link",
+    linkCopied: "Link Copied!",
+    addShow: "Add Anime",
+    editShow: "Edit Anime",
+    deleteShow: "Delete Anime",
+    totalViews: "Total Views",
+    activeUsers: "Active Users",
+  },
+  ja: {
+    appName: "アニメストリーム",
+    home: "ホーム",
+    movies: "映画",
+    tvShows: "TV番組",
+    watchlist: "お気に入り",
+    downloads: "ダウンロード",
+    searchPlaceholder: "タイトル、ジャンル、タグで検索...",
+    trending: "今、トレンド",
+    recommendedForYou: "あなたへのおすすめ",
+    popularOngoing: "人気放送中のシリーズ",
+    genre: "ジャンル",
+    status: "ステータス",
+    type: "タイプ",
+    playNow: "今すぐ再生",
+    addedToWatchlist: "リスト内",
+    addToWatchlist: "お気に入りに追加",
+    episodes: "エピソード",
+    episode: "第",
+    comments: "コメント",
+    addComment: "コメントを書く...",
+    quality: "画質",
+    download: "ダウンロード",
+    driveLink: "Google ドライブ",
+    directDownload: "直接ダウンロード",
+    offlineMode: "オフラインモード",
+    offlineReady: "オフライン再生可能",
+    downloadForOffline: "エピソードをダウンロード",
+    downloading: "ダウンロード中...",
+    downloaded: "ダウンロード完了",
+    adminDashboard: "管理パネル",
+    login: "ログイン",
+    logout: "ログアウト",
+    signUp: "会員登録",
+    watchParty: "ウォッチパーティー",
+    createParty: "パーティーを作成",
+    joinParty: "ルームに参加",
+    partyRoom: "パーティールーム",
+    settings: "設定",
+    deviceSync: "進捗を同期",
+    syncComplete: "同期完了",
+    rating: "評価",
+    year: "制作年",
+    statusOngoing: "放送中",
+    statusCompleted: "完結",
+    details: "詳細情報",
+    skipIntro: "イントロをスキップ",
+    nextEpisode: "次の話へ",
+    multiDeviceSyncDesc: "Firebaseを介して、視聴進捗とお気に入りがデバイス間で同期されます。",
+    shareTitle: "アニメをシェア",
+    shareDesc: "この作品を友達とシェアして一緒に楽しみましょう！",
+    copyLink: "リンクをコピー",
+    linkCopied: "コピー完了！",
+    addShow: "アニメを追加",
+    editShow: "アニメを編集",
+    deleteShow: "アニメを削除",
+    totalViews: "総再生回数",
+    activeUsers: "アクティブユーザー",
+  },
+  es: {
+    appName: "AniStream",
+    home: "Inicio",
+    movies: "Películas",
+    tvShows: "Series TV",
+    watchlist: "Mi Lista",
+    downloads: "Descargas",
+    searchPlaceholder: "Buscar anime por título, género...",
+    trending: "Tendencias de Hoy",
+    recommendedForYou: "Recomendado Para Ti",
+    popularOngoing: "Series Populares en Emisión",
+    genre: "Género",
+    status: "Estado",
+    type: "Tipo",
+    playNow: "Reproducir",
+    addedToWatchlist: "En la Lista",
+    addToWatchlist: "Agregar a mi Lista",
+    episodes: "Episodios",
+    episode: "Episodio",
+    comments: "Comentarios",
+    addComment: "Escribe un comentario...",
+    quality: "Calidad",
+    download: "Descargar",
+    driveLink: "Google Drive Link",
+    directDownload: "Descarga Directa",
+    offlineMode: "Modo Sin Conexión",
+    offlineReady: "Listo para ver sin conexión",
+    downloadForOffline: "Descargar Episodio",
+    downloading: "Descargando...",
+    downloaded: "Descargado",
+    adminDashboard: "Admin Panel",
+    login: "Iniciar Sesión",
+    logout: "Cerrar Sesión",
+    signUp: "Registrarse",
+    watchParty: "Watch Party",
+    createParty: "Crear Watch Party",
+    joinParty: "Unirse a Sala",
+    partyRoom: "Sala de Fiesta",
+    settings: "Configuración",
+    deviceSync: "Sincronizar Progreso",
+    syncComplete: "Sincronización Completa",
+    rating: "Clasificación",
+    year: "Año",
+    statusOngoing: "En Emisión",
+    statusCompleted: "Finalizado",
+    details: "Detalles",
+    skipIntro: "Saltar Intro",
+    nextEpisode: "Siguiente Episodio",
+    multiDeviceSyncDesc: "Tu progreso y descargas se sincronizan en la nube con Firebase.",
+    shareTitle: "Compartir Anime",
+    shareDesc: "¡Comparte este anime con tus amigos y mírenlo juntos!",
+    copyLink: "Copiar Enlace",
+    linkCopied: "¡Enlace Copiado!",
+    addShow: "Añadir Anime",
+    editShow: "Editar Anime",
+    deleteShow: "Eliminar Anime",
+    totalViews: "Vistas Totales",
+    activeUsers: "Usuarios Activos",
+  },
+  si: {
+    appName: "AniStream",
+    home: "ප්‍රධාන පිටුව",
+    movies: "චිත්‍රපට",
+    tvShows: "කතාමාලා",
+    watchlist: "මගේ ලැයිස්තුව",
+    downloads: "බාගත කිරීම්",
+    searchPlaceholder: "ඇනිමෙ සොයන්න (නම, ශානරය...)",
+    trending: "අද දවසේ ජනප්‍රිය",
+    recommendedForYou: "ඔබට ගැලපෙන නිර්දේශ",
+    popularOngoing: "විකාශනය වන ජනප්‍රිය කතා",
+    genre: "කාණ්ඩය",
+    status: "තත්වය",
+    type: "වර්ගය",
+    playNow: "දැන් නරඹන්න",
+    addedToWatchlist: "ලැයිස්තුවේ ඇත",
+    addToWatchlist: "ලැයිස්තුවට එක් කරන්න",
+    episodes: "කොටස්",
+    episode: "කොටස",
+    comments: "අදහස්",
+    addComment: "අදහසක් එක් කරන්න...",
+    quality: "ගුණාත්මකභාවය",
+    download: "බාගත කරන්න",
+    driveLink: "Google Drive සබැඳිය",
+    directDownload: "ඍජු බාගත කිරීම",
+    offlineMode: "නොබැඳි මාදිලිය",
+    offlineReady: "නොබැඳිව නැරඹිය හැක",
+    downloadForOffline: "බාගත කරන්න",
+    downloading: "බාගත වෙමින් පවතී...",
+    downloaded: "බාගත කර අවසන්",
+    adminDashboard: "පාලක පැනලය",
+    login: "ඇතුල් වන්න",
+    logout: "පිටවන්න",
+    signUp: "ලියාපදිංචි වන්න",
+    watchParty: "Watch Party",
+    createParty: "Party එකක් සාදන්න",
+    joinParty: "සම්බන්ධ වන්න",
+    partyRoom: "Party කාමරය",
+    settings: "සැකසුම්",
+    deviceSync: "සමමුහුර්ත කරන්න",
+    syncComplete: "සමමුහුර්ත කිරීම සාර්ථකයි",
+    rating: "ඇගයීම",
+    year: "වසර",
+    statusOngoing: "විකාශනය වේ",
+    statusCompleted: "නිමවා ඇත",
+    details: "විස්තර",
+    skipIntro: "Intro එක මඟහරින්න",
+    nextEpisode: "ඊළඟ කොටස",
+    multiDeviceSyncDesc: "ඔබගේ නැරඹුම් ප්‍රගතිය Firebase මඟින් උපාංග අතර සමමුහුර්ත වේ.",
+    shareTitle: "බෙදාහරින්න",
+    shareDesc: "මිතුරන් සමඟ බෙදාගෙන එකට නරඹන්න!",
+    copyLink: "සබැඳිය පිටපත් කරන්න",
+    linkCopied: "පිටපත් කරගන්නා ලදී!",
+    addShow: "ඇනිමෙ එක් කරන්න",
+    editShow: "සංස්කරණය කරන්න",
+    deleteShow: "ඉවත් කරන්න",
+    totalViews: "මුළු නැරඹුම්",
+    activeUsers: "ක්‍රියාකාරී පරිශීලකයින්",
+  },
+  fr: {
+    appName: "AniStream",
+    home: "Accueil",
+    movies: "Films",
+    tvShows: "Séries TV",
+    watchlist: "Ma Liste",
+    downloads: "Téléchargements",
+    searchPlaceholder: "Rechercher un anime par titre, genre...",
+    trending: "Tendances Actuelles",
+    recommendedForYou: "Recommandé Pour Vous",
+    popularOngoing: "Séries En Cours Populaires",
+    genre: "Genre",
+    status: "Statut",
+    type: "Type",
+    playNow: "Lancer la lecture",
+    addedToWatchlist: "Dans la Liste",
+    addToWatchlist: "Ajouter à ma liste",
+    episodes: "Épisodes",
+    episode: "Épisode",
+    comments: "Commentaires",
+    addComment: "Écrire un commentaire...",
+    quality: "Qualité",
+    download: "Télécharger",
+    driveLink: "Lien Google Drive",
+    directDownload: "Téléchargement Direct",
+    offlineMode: "Mode Hors-ligne",
+    offlineReady: "Prêt pour lecture hors-ligne",
+    downloadForOffline: "Télécharger l'épisode",
+    downloading: "Téléchargement...",
+    downloaded: "Téléchargé",
+    adminDashboard: "Panel Admin",
+    login: "Connexion",
+    logout: "Déconnexion",
+    signUp: "S'inscrire",
+    watchParty: "Watch Party",
+    createParty: "Créer une Watch Party",
+    joinParty: "Rejoindre le salon",
+    partyRoom: "Salon Party",
+    settings: "Paramètres",
+    deviceSync: "Synchroniser",
+    syncComplete: "Synchro Terminée",
+    rating: "Note",
+    year: "Année",
+    statusOngoing: "En cours",
+    statusCompleted: "Terminé",
+    details: "Détails",
+    skipIntro: "Passer l'Intro",
+    nextEpisode: "Épisode Suivant",
+    multiDeviceSyncDesc: "Votre progression est synchronisée entre vos appareils via Firebase.",
+    shareTitle: "Partager l'Anime",
+    shareDesc: "Partagez ce stream avec vos amis et regardez ensemble !",
+    copyLink: "Copier le Lien",
+    linkCopied: "Lien Copié !",
+    addShow: "Ajouter l'Anime",
+    editShow: "Modifier l'Anime",
+    deleteShow: "Supprimer l'Anime",
+    totalViews: "Vues Totales",
+    activeUsers: "Utilisateurs Actifs",
+  },
+};

@@ -1,0 +1,6 @@
+{
+  "name": "Anime Streaming Platform",
+  "description": "A feature-rich, beautiful, and SEO-friendly anime streaming platform with personalized recommendations, offline viewing simulation, multiple languages, social sharing, and an advanced admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
